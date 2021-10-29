@@ -18,6 +18,8 @@ using unique packet numbers to avoid retransmission ambiguity and by using expli
 ## Design
 The network setup is very simple: one host is connected directly to a router which is further connected to 2 hosts, used as servers, via a switch.
 
+![image](https://user-images.githubusercontent.com/91339156/139425518-d47663bb-36d5-4a3c-b117-4209f51d344c.png)
+
 For the performance evaluation to be realistic, we included both web-page static contents and also video streaming (the most popular medium nowadays).
 Our `client` will run the software necessary for the performance evaluation, on the other hand the `web-server` and `video-server` will run each 3 Docker containers.    
 It is important to highlight that HTTP/3 protocol requires the use of port 80 and 443.
