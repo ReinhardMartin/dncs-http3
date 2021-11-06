@@ -18,16 +18,12 @@ using unique packet numbers to avoid retransmission ambiguity and by using expli
 ## Design
 The network setup is very simple: 2 host connected to a router, one used as a client the other as a web-server.
 
-For the performance evaluation to be realistic, we included both web-page static contents and also video streaming (the most popular medium nowadays).
-Our `client` will run the software necessary for the performance evaluation, on the other hand the `web-server` and `video-server` will run each 3 Docker containers.    
+
+Our `client` will run the software necessary for the performance evaluation, on the other hand the `server` will run 3 Docker containers deploying the html pages.    
 It is important to highlight that HTTP/3 protocol requires the use of port 80 and 443.
 
-| SERVICE | PROTOCOL | IP ADDRESS | PORT |
-| :---: | :---: | :---: | :---:|
-| web page | TCP | 192.168.2.2 | 82, 452 |
-| web page | HTTP/2 | 192.168.2.2 | 81, 451 |
-| web page | HTTP/3 | 192.168.2.2 | 80, 443 |
-| video streaming | TCP | 192.168.2.3 | 82, 452 |
-| video streaming | HTTP/2 | 192.168.2.3 | 81, 451 |
-| video streaming | HTTP/3 | 192.168.2.3 | 80, 443 |
-
+| SERVICE | IP ADDRESS |
+| :---: | :---: |
+| web page | 192.168.2.2 |
+| web page | 192.168.2.2 |
+| web page | 192.168.2.2 |
