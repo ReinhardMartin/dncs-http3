@@ -17,6 +17,7 @@ using unique packet numbers to avoid retransmission ambiguity and by using expli
 
 ## Design
 The network setup is very simple: 2 host connected to a router, one used as a client the other as a web-server.
+![image](https://user-images.githubusercontent.com/91339156/140618029-a341ca21-3cb9-4e5f-b7f7-c63e3d7be3c8.png)
 
 
 Our `client` will run the software necessary for the performance evaluation, on the other hand the `server` will run 3 Docker containers deploying the html pages.    
