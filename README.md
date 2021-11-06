@@ -16,9 +16,7 @@ carried in that packet.
 using unique packet numbers to avoid retransmission ambiguity and by using explicit signaling in acknowledgements (ACKs) for accurate RTT measurements. 
 
 ## Design
-The network setup is very simple: one host is connected directly to a router which is further connected to 2 hosts, used as servers, via a switch.
-                                                                                                       
-![Cattura2](https://user-images.githubusercontent.com/91339156/139426878-73eb2bc2-003e-4274-a5c1-f9147b492c84.png)
+The network setup is very simple: 2 host connected to a router, one used as a client the other as a web-server.
 
 For the performance evaluation to be realistic, we included both web-page static contents and also video streaming (the most popular medium nowadays).
 Our `client` will run the software necessary for the performance evaluation, on the other hand the `web-server` and `video-server` will run each 3 Docker containers.    
