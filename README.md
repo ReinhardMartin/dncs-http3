@@ -24,5 +24,5 @@ It is important to highlight that HTTP/3 protocol requires the use of port 80 an
 
 | NETWORK INTERFACE | DEVICE | IP ADDRESS |
 | :---: | :---: | :---: |
-| enp0s9 | client | 192.168.2.2 |
-| enp0s9 | router | 192.168.2.2 |
+| enp0s8 | client | 192.168.1.2 |
+| enp0s8 | router | 192.168.1.1 |
