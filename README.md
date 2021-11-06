@@ -22,14 +22,14 @@ The network setup is very simple: 2 host connected to a router, one used as a cl
 Our `client` will run the software necessary for the performance evaluation, on the other hand the `server` will run 3 Docker containers deploying the html pages.    
 It is important to highlight that HTTP/3 protocol requires the use of port 80 and 443.
 
-- **connection between client and router
+- **connection between client and router**
 
 | NETWORK INTERFACE | DEVICE | IP ADDRESS |
 | :---: | :---: | :---: |
 | enp0s8 | client | 192.168.1.2/30 |
 | enp0s8 | router | 192.168.1.1/30 |
 
-- **connection between router and server
+- **connection between router and server**
 
 | NETWORK INTERFACE | DEVICE | IP ADDRESS |
 | :---: | :---: | :---: |
