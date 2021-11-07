@@ -41,7 +41,7 @@ It is important to highlight that HTTP/3 protocol requires the use of port 80 an
 As said earlier, Vagrant is used to manage the VMs and the networking side of the environment.                    
 The `Vagrantfile` is configured in order to:
 - set _ubuntu/bionic64_ as the hosts's OS
-- reserve 1024 MB of RAM to the client and server in order to run Google Chrome and the docker containers
+- reserve 1024 MB of RAM to the client and server in order to run Google Chrome and the Docker containers
 - enable the _X11 forwarding_ necessary to use the browser and the related performance evaluation tools
 ```
 config.ssh.forward_agent = true
@@ -49,3 +49,6 @@ config.ssh.forward_x11 = true
 ```
 
 All the provisioning scripts are in the `vagrant` folder and are used mainly for routing and the installation of basic softwares.
+
+# Docker
+To run the Docker containers we first need to build a Docker image 
