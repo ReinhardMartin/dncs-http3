@@ -51,4 +51,11 @@ config.ssh.forward_x11 = true
 All the provisioning scripts are in the `vagrant` folder and are used mainly for routing and the installation of basic softwares.
 
 # Docker
-To run the Docker containers we first need to build a Docker image 
+To deploy the Docker containers we first need a Docker image which is built from a `Dockerfile` by running the following commands (in our `docker/` directory):
+```
+sudo docker build -t reinhardmartin/dncs_http3 .
+sudo docker login
+sudo docker push reinhardmartin/dncs_http3:latest
+```
+The Docker image is now created and ready to be downloaded, we will discuss in the **Deployment** part how to do this and how to deploy the containers.
+The image used is based on NGINX 1.16.1 over Ubuntu 18.04 in order to use the [Quiche patch]https://blog.cloudflare.com/experiment-with-http-3-using-nginx-and-quiche/.
