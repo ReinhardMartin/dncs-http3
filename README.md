@@ -41,7 +41,7 @@ It is important to highlight that HTTP/3 protocol requires the use of port 80 an
 As said earlier, Vagrant is used to manage the VMs and the networking side of the environment.                    
 The `Vagrantfile` is configured in order to:
 - set _ubuntu/bionic64_ as the hosts's OS
-- reserve 1024 MB of RAM to the client and server in order to run Google Chrome and the Docker containers
+- reserve 1024 MB of RAM to the client and server in order to run _Google Chrome_ and the Docker containers
 - enable the _X11 forwarding_ necessary to use the browser and the related performance evaluation tools
 ```
 config.ssh.forward_agent = true
@@ -91,3 +91,4 @@ differents configurations:
 - **--name nginx1:** use ports 100 - 743 with the protocol TCP
 
 This is possible because of the configuration files located in `docker/conf/` passed by the `-v` option in Docker.
+We have already enabled the _X11 forwarding_ and installed _Google Chrome_ on our `client`, in order to run it we can follow [these simple instructions](https://jcook0017.medium.com/how-to-enable-x11-forwarding-in-windows-10-on-a-vagrant-virtual-box-running-ubuntu-d5a7b34363f).
