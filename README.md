@@ -43,6 +43,9 @@ The `Vagrantfile` is configured in order to:
 - set _ubuntu/bionic64_ as the hosts's OS
 - reserve 1024 MB of RAM to the client and server in order to run Google Chrome and the docker containers
 - enable the _X11 forwarding_ necessary to use the browser and the related performance evaluation tools
- 
-  config.ssh.forward_agent = true
-  config.ssh.forward_x11 = true
+```
+config.ssh.forward_agent = true
+config.ssh.forward_x11 = true
+```
+
+All the provisioning scripts are in the `vagrant` folder and are used mainly for routing and the installation of basic softwares.
