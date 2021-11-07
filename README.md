@@ -37,4 +37,4 @@ It is important to highlight that HTTP/3 protocol requires the use of port 80 an
 | enp0s9 | router | 192.168.2.1/30 |
 | enp0s8 | server | 192.168.2.2/30 |
 
-## Docker
+## Vagrant
