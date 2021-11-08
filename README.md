@@ -81,14 +81,11 @@ To make different tests our Docker containers will run each 3 HTML pages of diff
 ## Deployment
 We can now create the environment with `vagrant up`. Focusing on the `server.sh` script we notice the following commands:
 ```
-sudo docker run --name nginx3 -d -p 80:80 -p 443:443/tcp -p 443:443/udp -v /vagrant/docker/conf/http3.web.conf:/etc/nginx/nginx.conf -v
-/vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
+sudo docker run --name nginx3 -d -p 80:80 -p 443:443/tcp -p 443:443/udp -v /vagrant/docker/conf/http3.web.conf:/etc/nginx/nginx.conf -v /vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
 
-sudo docker run --name nginx2 -d -p 90:80 -p 643:443/tcp -p 643:443/udp -v /vagrant/docker/conf/http2.web.conf:/etc/nginx/nginx.conf -v
-/vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
+sudo docker run --name nginx2 -d -p 90:80 -p 643:443/tcp -p 643:443/udp -v /vagrant/docker/conf/http2.web.conf:/etc/nginx/nginx.conf -v /vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
 
-sudo docker run --name nginx1 -d -p 100:80 -p 743:443/tcp -p 743:443/udp -v /vagrant/docker/conf/tcp.web.conf:/etc/nginx/nginx.conf -v
-/vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
+sudo docker run --name nginx1 -d -p 100:80 -p 743:443/tcp -p 743:443/udp -v /vagrant/docker/conf/tcp.web.conf:/etc/nginx/nginx.conf -v /vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
 ```
 Each command deploys a different container based on the Docker image created previously [reinhardmartin/dncs_http3](https://hub.docker.com/r/reinhardmartin/dncs_http3) with
 different configurations:
