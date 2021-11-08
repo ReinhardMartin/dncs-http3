@@ -70,6 +70,12 @@ This will generate two files: `fullchain.pem` and `privkey.pem`.
 For security reason these certificates are not included in this repository.
 
 ## Websites
+To make different tests our Docker containers will run each 3 HTML pages of different size:
+- Dimension - `html/index3` (size 2.96 MB)
+
+- Multiverse - `html/index2` (size 3.51 MB)
+
+- Covido - `html/index` (size 9.62 MB) 
 
 
 ## Deployment
@@ -85,7 +91,7 @@ sudo docker run --name nginx1 -d -p 100:80 -p 743:443/tcp -p 743:443/udp -v /vag
 /vagrant/certs/:/etc/nginx/certs/ -v /vagrant/docker/html/:/etc/nginx/html/ reinhardmartin/dncs_http3
 ```
 Each command deploys a different container based on the Docker image created previously [reinhardmartin/dncs_http3](https://hub.docker.com/r/reinhardmartin/dncs_http3) with
-differents configurations:
+different configurations:
 - **--name nginx3:** use ports 80 - 443 with the protocol HTTP/3
 - **--name nginx2:** use ports 90 - 643 with the protocol HTTP/2
 - **--name nginx1:** use ports 100 - 743 with the protocol TCP
