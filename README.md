@@ -71,15 +71,18 @@ For security reason these certificates are not included in this repository.
 
 ## Websites
 To make different tests our Docker containers will run each 3 HTML pages of different size:
-- Dimension - `html/index3`
+- **Dimension -** `html/index3`
+- 
 ![dim](https://user-images.githubusercontent.com/91339156/140986874-1c71f6f1-5b4d-4487-8238-e4155e976609.PNG)
 
 
-- Multiverse - `html/index2`
+- **Multiverse -** `html/index2`
+- 
 ![mult](https://user-images.githubusercontent.com/91339156/140986895-0999898e-a35b-47b5-9652-4ba26c58ed60.PNG)
 
 
-- Covido - `html/index`
+- **Covido -** `html/index`
+- 
 ![covid](https://user-images.githubusercontent.com/91339156/140986905-e8ffa2b2-d7c5-474a-a67c-7241095dea07.PNG)
 
 
