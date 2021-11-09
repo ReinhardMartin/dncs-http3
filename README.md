@@ -71,11 +71,11 @@ For security reason these certificates are not included in this repository.
 
 ## Websites
 To make different tests our Docker containers will run each 3 HTML pages of different size:
-- Dimension - `html/index3` (size 2.96 MB)
+- Dimension - `html/index3`
 
-- Multiverse - `html/index2` (size 3.51 MB)
+- Multiverse - `html/index2`
 
-- Covido - `html/index` (size 9.62 MB) 
+- Covido - `html/index`
 
 
 ## Deployment
@@ -101,3 +101,10 @@ google-chrome --enable-quic --quic-version=h3-29
 ```
 
 ## Performance Evaluation
+All the measurements have to be taken from the client, which is accessible with the command `vagrant ssh`.
+First, to have a brief overview of what has to be expected, we have a look at **httpstat**'s output (of index.html web page)
+- HTTP/3
+
+- HTTP/2
+
+- TCP
