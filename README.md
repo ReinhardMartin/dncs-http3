@@ -97,7 +97,7 @@ This is possible because of the configuration files located in `docker/conf/` pa
 We have already enabled the _X11 forwarding_ and installed _Google Chrome_ on our `client`, in order to run it we can follow [these simple
 instructions](https://jcook0017.medium.com/how-to-enable-x11-forwarding-in-windows-10-on-a-vagrant-virtual-box-running-ubuntu-d5a7b34363f) then launch it with the command:
 ```
-google-chrome --enable-quic --quic-version=h3-27
+google-chrome --enable-quic --quic-version=h3-29
 ```
 
 ## Performance Evaluation
