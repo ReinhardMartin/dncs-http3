@@ -72,10 +72,15 @@ For security reason these certificates are not included in this repository.
 ## Websites
 To make different tests our Docker containers will run each 3 HTML pages of different size:
 - Dimension - `html/index3`
+![dim](https://user-images.githubusercontent.com/91339156/140986874-1c71f6f1-5b4d-4487-8238-e4155e976609.PNG)
+
 
 - Multiverse - `html/index2`
+![mult](https://user-images.githubusercontent.com/91339156/140986895-0999898e-a35b-47b5-9652-4ba26c58ed60.PNG)
+
 
 - Covido - `html/index`
+![covid](https://user-images.githubusercontent.com/91339156/140986905-e8ffa2b2-d7c5-474a-a67c-7241095dea07.PNG)
 
 
 ## Deployment
@@ -99,12 +104,19 @@ instructions](https://jcook0017.medium.com/how-to-enable-x11-forwarding-in-windo
 ```
 google-chrome --enable-quic --quic-version=h3-29
 ```
+This will be necessary for the next part.
 
 ## Performance Evaluation
 All the measurements have to be taken from the client, which is accessible with the command `vagrant ssh`.
 First, to have a brief overview of what has to be expected, we have a look at **httpstat**'s output (of index.html web page)
 - HTTP/3
 
+
+
 - HTTP/2
 
+
 - TCP
+
+
+Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
