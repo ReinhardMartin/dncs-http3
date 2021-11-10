@@ -134,15 +134,16 @@ Important parameters to notice are the following:
 
 | PROTOCOL | PAGE WEIGHT | TTFB | LOAD TIME | # TCP CONN. |
 | :---: | :---: | :---: | :---: | :---: |
-| HTTP/3 | client | 2.41 ms |  | 0 |
-| HTTP/2 | router | 7.16 ms |  | 1 |
-| TCP | router | 5.40 ms |  | 6 |
+| HTTP/3 | 5.1 MB | 2.41 ms | 3.14 s | 0 |
+| HTTP/2 | 5.1 MB | 7.16 ms | 2.49 s | 1 |
+| TCP | 5.1 MB | 5.40 ms | 2.34 s | 6 |
 
 - **Dimension**
 
 | PROTOCOL | PAGE WEIGHT | TTFB | LOAD TIME | # TCP CONN. |
 | :---: | :---: | :---: | :---: | :---: |
-| HTTP/3 | client | 4.09 ms |  | 0 |
-| HTTP/2 | router | 7.50 ms |  | 1 |
-| TCP | router | 5.63 ms |  | 3 |
+| HTTP/3 | 344 kB | 4.09 ms | 769 ms | 0 |
+| HTTP/2 | 344 kB | 7.50 ms | 650 ms | 1 |
+| TCP | 344 kB | 5.63 ms | 732 ms | 3 |
 
+(Screenshots of _Chrome Devtools_ are in `media/` directory).
