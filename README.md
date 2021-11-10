@@ -77,13 +77,13 @@ To make different tests our Docker containers will run each 3 HTML pages of diff
 
 
 - **Multiverse -** `html/index2`
- 
-![mult](https://user-images.githubusercontent.com/91339156/140986895-0999898e-a35b-47b5-9652-4ba26c58ed60.PNG)
+
+ ![multi](https://user-images.githubusercontent.com/91339156/141160339-0c76dbfd-6f01-42a8-8f9e-6b13e8845d54.PNG)
 
 
 - **Covido -** `html/index`
  
-![covid](https://user-images.githubusercontent.com/91339156/140986905-e8ffa2b2-d7c5-474a-a67c-7241095dea07.PNG)
+![covido](https://user-images.githubusercontent.com/91339156/141160309-d373aa6e-61e6-4a0a-816f-1c34232948c2.PNG)
 
 
 ## Deployment
