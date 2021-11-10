@@ -151,6 +151,7 @@ Important parameters to notice are the following:
 ## Conclusion
 As expect by the **httpstat** output, _HTTP/3 + QUIC_ is not yet the fastest protocol compared to the previous versions but what we can observe from the data acquired is the
 short TTFB (time to first byte) due to the faster handshake and the absence of TCP connections, that would drop in a switch of connection (e.g. mobile to Wi-Fi), in favor of new
-unique ID. What we couldn't observe is _HTTP/3_ behavior in a high congestion level network to test its reliability.
-<br />
-Http/3 is still in the development phase, in the future, we could expect increased performance in a real-world scenario where UDP connections, parallel loading of resources and better congestion control will play a significant role.
+unique ID. What we couldn't observe is _HTTP/3_ behavior in a high congestion level network to test its reliability. Hence some of the purpouse this protocol set itself are
+fulfilled still there is margin of improvement.
+<br />                                                                                                                      
+_Http/3_ is still in the development phase, in the future, we could expect increased performance in a real-world scenario where UDP connections, parallel loading of resources and better congestion control will play a significant role.
