@@ -132,6 +132,10 @@ It seems HTTP/2 is still a more reliable protocol in terms of speed.
 Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
 Important parameters to notice are the following:
 - **covido**
+| PROTOCOL | DEVICE | IP ADDRESS |
+| :---: | :---: | :---: |
+| enp0s8 | client | 192.168.1.2/30 |
+| enp0s8 | router | 192.168.1.1/30 |
 
 TTFB 
 index
