@@ -128,7 +128,8 @@ First, to have a brief overview of what has to be expected, we have a look at **
 ![h1](https://user-images.githubusercontent.com/91339156/141154735-881b8cce-ae54-4888-b4d2-4c85d114a4d9.PNG)
 
 
-It seems HTTP/2 is still a more reliable protocol in terms of speed. Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
+It seems HTTP/2 is still a more reliable protocol in terms of speed.                                                 
+Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
 Important parameters to notice are the following:
 - **covido**
 
