@@ -114,14 +114,13 @@ All the measurements have to be taken from the client, which is accessible with 
 First, to have a brief overview of what has to be expected, we have a look at **httpstat**'s output (of index2.html web page)
 - **HTTP/3**
 
-![h3](https://user-images.githubusercontent.com/91339156/141154716-a85181d9-815a-4db2-8c05-c4df6da5e1bb.PNG)
+![h3](https://user-images.githubusercontent.com/91339156/141160555-08fd6577-c958-4efa-a848-492a3c7b1d89.PNG)
 
 (To be noticed that in this case the response is HTTP/2 not /3)
 
 - **HTTP/2**
 
-![h2](https://user-images.githubusercontent.com/91339156/141154728-a24e5d90-9bbc-4f9c-96ed-793711d40b38.PNG)
-
+![h2](https://user-images.githubusercontent.com/91339156/141160592-09dd45da-6ee3-41f7-b801-c29c58186fb3.PNG)
 
 - **TCP**
 
