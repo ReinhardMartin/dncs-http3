@@ -113,13 +113,28 @@ This will be necessary for the next part.
 All the measurements have to be taken from the client, which is accessible with the command `vagrant ssh`.
 First, to have a brief overview of what has to be expected, we have a look at **httpstat**'s output (of index2.html web page)
 - HTTP/3
+![h3](https://user-images.githubusercontent.com/91339156/141154716-a85181d9-815a-4db2-8c05-c4df6da5e1bb.PNG)
 
 (To be noticed that in this case the response is HTTP/2 not /3)
 
 - HTTP/2
+![h2](https://user-images.githubusercontent.com/91339156/141154728-a24e5d90-9bbc-4f9c-96ed-793711d40b38.PNG)
 
 
 - TCP
+![h1](https://user-images.githubusercontent.com/91339156/141154735-881b8cce-ae54-4888-b4d2-4c85d114a4d9.PNG)
 
 
 It seems HTTP/2 is still a more reliable protocol in terms of speed. Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
+Important parameters to notice are the following:
+- **covido**
+
+TTFB 
+index
+HTTP/3 2.41 ms 0 conn
+http/2 7.16 ms 1 conn 
+tcp 5.40 ms 6 conn
+index3
+Http/3 4.09 ms 0 conn
+http/2 7.50 ms 1 conn
+tcp 5.63 ms 3 conn
