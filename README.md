@@ -12,8 +12,8 @@ To do this, it uses a different transport layer network protocol called QUIC whi
 - **Optimization:** to prevent _head-of-line blocking_ multiple streams of data are supported within a connection, in this way a lost packet only impacts those streams with data
 carried in that packet.
 - **Resiliency:** each connection has its unique ID that permits to survive changes in the client's IP address and port (e.g. switching from Wi-Fi to a mobile network).
-- **Reliability:** unlike TCP, the QUIC protocol does not rely on a specific congestion control algorithm but it can automaticaly adapt at needs. It also improves loss recovery by
-using unique packet numbers to avoid retransmission ambiguity and by using explicit signaling in acknowledgements (ACKs) for accurate RTT measurements. 
+- **Reliability:** unlike TCP, the QUIC protocol does not rely on a specific congestion control algorithm but it can automaticaly adapt at needs. It also improves loss recovery
+by using unique packet numbers to avoid retransmission ambiguity and by using explicit signaling in acknowledgements (ACKs) for accurate RTT measurements. 
 
 ## Design
 The network setup is very simple: 2 host connected to a router, one used as a client the other as a web-server.
@@ -147,3 +147,8 @@ Important parameters to notice are the following:
 | TCP | 344 kB | 5.63 ms | 732 ms | 3 |
 
 (Screenshots of _Chrome Devtools_ are in `media/` directory).
+
+## Conclusion
+As expect by the **httpstat** output, _HTTP/3 + QUIC_ is not yet the fastest protocol compared to the previous versions but what we can observe from the data acquired is the
+short TTFB (time to first byte) due to the faster handshake and the absence of TCP connections, that would drop in a switch of connection (e.g. mobile to Wi-Fi), in favor of new
+unique ID.
