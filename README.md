@@ -111,10 +111,10 @@ This will be necessary for the next part.
 
 ## Performance Evaluation
 All the measurements have to be taken from the client, which is accessible with the command `vagrant ssh`.
-First, to have a brief overview of what has to be expected, we have a look at **httpstat**'s output (of index.html web page)
+First, to have a brief overview of what has to be expected, we have a look at **httpstat**'s output (of index2.html web page)
 - HTTP/3
 
-
+(To be noticed that in this case the response is HTTP/2 not /3)
 
 - HTTP/2
 
@@ -122,4 +122,4 @@ First, to have a brief overview of what has to be expected, we have a look at **
 - TCP
 
 
-Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
+It seems HTTP/2 is still a more reliable protocol in terms of speed. Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
