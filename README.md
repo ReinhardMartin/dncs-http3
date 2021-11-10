@@ -129,20 +129,21 @@ First, to have a brief overview of what has to be expected, we have a look at **
 
 
 It seems HTTP/2 is still a more reliable protocol in terms of speed.                                                 
-Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.
+Now, for a more in depth analysis, we launch _Google Chrome_ where we can access our domain and test it with _Chrome Devtools_.      
 Important parameters to notice are the following:
-- **covido**
-| PROTOCOL | DEVICE | IP ADDRESS |
-| :---: | :---: | :---: |
-| enp0s8 | client | 192.168.1.2/30 |
-| enp0s8 | router | 192.168.1.1/30 |
+- **Covido**
 
-TTFB 
-index
-HTTP/3 2.41 ms 0 conn
-http/2 7.16 ms 1 conn 
-tcp 5.40 ms 6 conn
-index3
-Http/3 4.09 ms 0 conn
-http/2 7.50 ms 1 conn
-tcp 5.63 ms 3 conn
+| PROTOCOL | PAGE WEIGHT | TTFB | LOAD TIME | # TCP CONN. |
+| :---: | :---: | :---: | :---: | :---: |
+| HTTP/3 | client | 2.41 ms |  | 0 |
+| HTTP/2 | router | 7.16 ms |  | 1 |
+| TCP | router | 5.40 ms |  | 6 |
+
+- **Dimension**
+
+| PROTOCOL | PAGE WEIGHT | TTFB | LOAD TIME | # TCP CONN. |
+| :---: | :---: | :---: | :---: | :---: |
+| HTTP/3 | client | 4.09 ms |  | 0 |
+| HTTP/2 | router | 7.50 ms |  | 1 |
+| TCP | router | 5.63 ms |  | 3 |
+
